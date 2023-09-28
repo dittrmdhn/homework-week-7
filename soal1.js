@@ -5,7 +5,12 @@ const {
   areaRectangle,
 } = require("./module.js");
 
-console.log(`Keliling persegi: ${perimeterSquare(4)}`);
-console.log(`Luas persegi: ${areaSquare(4)}`);
-console.log(`Keliling persegi panjang: ${perimeterRectangle(4, 6)}`);
-console.log(`Luas persegi panjang: ${areaRectangle(4, 6)}`);
+const squarePerimeter = perimeterSquare(4);
+const squareArea = areaSquare(12);
+const rectanglePerimeter = perimeterRectangle(8, 12);
+const rectangleArea = areaRectangle(9, 15);
+
+console.log(`Keliling persegi: ${squarePerimeter}`);
+console.log(`Luas persegi: ${squareArea}`);
+console.log(`Keliling persegi panjang: ${rectanglePerimeter}`);
+console.log(`Luas persegi panjang: ${rectangleArea}`);
