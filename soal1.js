@@ -5,12 +5,22 @@ const {
   areaRectangle,
 } = require("./module.js");
 
-const squarePerimeter = perimeterSquare(4);
-const squareArea = areaSquare(12);
-const rectanglePerimeter = perimeterRectangle(8, 12);
-const rectangleArea = areaRectangle(9, 15);
+const side = 8;
 
-console.log(`Keliling persegi: ${squarePerimeter}`);
-console.log(`Luas persegi: ${squareArea}`);
-console.log(`Keliling persegi panjang: ${rectanglePerimeter}`);
-console.log(`Luas persegi panjang: ${rectangleArea}`);
+const length = 12;
+const width = 6;
+
+const squarePerimeter = perimeterSquare(side);
+const squareArea = areaSquare(side);
+
+const rectanglePerimeter = perimeterRectangle(length, width);
+const rectangleArea = areaRectangle(length, width);
+
+console.log(`Keliling persegi dengan sisi ${side}cm = ${squarePerimeter}cm`);
+console.log(`Luas persegi dengan sisi ${side}cm = ${squareArea}cm`);
+console.log(
+  `Keliling persegi panjang dengan panjang ${length}cm dan lebar ${width}cm = ${rectanglePerimeter}cm`
+);
+console.log(
+  `Luas persegi panjang dengan panjang ${length}cm dan lebar ${width}cm = ${rectangleArea}cm`
+);
